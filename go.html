@@ -15,6 +15,9 @@
   <script src="https://aframe.io/releases/0.7.1/aframe.min.js"></script>
   <script type="text/javascript" src="https://cdn.webrtc.ecl.ntt.com/skyway-latest.js"></script>
   <script>
+    console.log("---------------------------------");
+    console.log("first");
+    console.log("---------------------------------");
     function _assert(desc, v) {
       if (v) {
         return;
@@ -47,6 +50,9 @@
     }
   </script>
   <script type="text/javascript">
+  console.log("---------------------------------");
+  console.log("second");
+  console.log("---------------------------------");
   // ----- use skyway room ----
   let myApiKey = 'dfaadc29-c45e-4e2a-8c2d-fdc4aea801ec'; //null; // set your API key
   let peer = null;
@@ -164,7 +170,7 @@
   </script>
   <script>
     console.log("---------------------------------");
-    console.log("first");
+    console.log("third");
     console.log("---------------------------------");
     AFRAME.registerComponent('play-on-window-click', {
       init: function () {
@@ -240,6 +246,9 @@
   </a-scene>
 </body>
 <script type="text/javascript">
+  console.log("---------------------------------");
+  console.log("fourth");
+  console.log("---------------------------------");
   //joinRoom();
 </script>
 </html>
