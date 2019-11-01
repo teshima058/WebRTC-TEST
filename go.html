@@ -96,6 +96,7 @@
 
   function joinRoom(stream) {
     let apiKey = getApiKeyFromURL() || myApiKey;
+    console.log("apiley : " + apiKey);
     if ((! apiKey) || (apiKey === '')) {
       alert('Please set your API Key');
       return;
