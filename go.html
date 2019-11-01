@@ -96,7 +96,9 @@
 
   function joinRoom(stream) {
     let apiKey = getApiKeyFromURL() || myApiKey;
+    console.log("---------------------------------");
     console.log("apiley : " + apiKey);
+    console.log("---------------------------------");
     if ((! apiKey) || (apiKey === '')) {
       alert('Please set your API Key');
       return;
@@ -152,12 +154,18 @@
   }
 
   function hideWaitMessage() {
+    console.log("---------------------------------");
+    console.log("hideWaitMessage");
+    console.log("---------------------------------");
     const element = document.getElementById("wait_massage");
     element.style.display = 'none';
   }
 
   </script>
   <script>
+    console.log("---------------------------------");
+    console.log("first");
+    console.log("---------------------------------");
     AFRAME.registerComponent('play-on-window-click', {
       init: function () {
         this.onClick = this.onClick.bind(this);
@@ -170,6 +178,9 @@
       },
       onClick: function (evt) {
         hideWaitMessage();
+        console.log("---------------------------------");
+        console.log("joinRoom : ");
+        console.log("---------------------------------");
         joinRoom(null);
         //startMediaAndJoinRoom();
       }
